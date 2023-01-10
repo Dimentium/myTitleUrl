@@ -24,9 +24,9 @@ function getTitle() {
 
 			if (document.title.indexOf(url) < 0) {
 				if (settings.urlFirst) {
-					document.title = url + " " + settings.separator + " " +  document.title;
+					document.title = url + settings.separator +  document.title;
 				} else {
-					document.title = document.title + " " + settings.separator + " " + url;
+					document.title = document.title + settings.separator + url;
 				}
 			}
 		});
