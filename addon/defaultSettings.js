@@ -1,5 +1,5 @@
 const settings = {
 	separator: "|",
 	hideProtocol: false,
-	urlOnly: false
+	urlFirst: false
 }

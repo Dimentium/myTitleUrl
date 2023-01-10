@@ -20,11 +20,11 @@ function getTitle() {
 			if (settings.hideProtocol) {
 				group = "$2"
 			}
-			url = url.replace(/(https?:\/\/([^\/]*\/)).*/i, group);
+			url = url.replace(/(https?:\/\/([^\/]*)\/).*/i, group);
 
 			if (document.title.indexOf(url) < 0) {
-				if (settings.urlOnly) {
-					document.title = url;
+				if (settings.urlFirst) {
+					document.title = url + " " + settings.separator + " " +  document.title;
 				} else {
 					document.title = document.title + " " + settings.separator + " " + url;
 				}
